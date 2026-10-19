@@ -15,90 +15,198 @@
     font-family: 'Inter regular';
     src: url(../fonts/inter-regular.otf);
 }
+@font-face {
+    font-family: 'SF UI Display bold';
+    src: url(../fonts/sf-ui-display-bold.ttf);
+}
 
-body{
+.container{
+    width: 1600px;
+    height: 6711px;
     background-color: #F9F8F5;
+    margin: 0 auto;
+    position: relative;
 }
 
-.header__logo{
-    width: 40px;
-    height: 40px;
-}
-
-.header__txt{
+.header__container-logo p{
     font-family: 'SF UI Display semibold';
     font-size: 24px;
     color: #1E1515;
+    margin-left: 8px;
 }
 
-.header__nav{
-    width: 433px;
+.header__container-logo{
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
     align-items: center;
-    margin-right: 255px;
 }
 
-.header__nav a{
-    text-decoration: none;
+.header{
+    padding-top: 32px;
+    margin-left: 100px;
+}
+
+.header__container-logo-nav a{
     font-family: 'SF UI Display medium';
     font-size: 16px;
     color: #625B5B;
+    text-decoration: none;
 }
 
-.header__search{
+.header__container-logo-nav{
+    width: 433px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 60px;
+}
+
+.header__container{
+    display: flex;
+    align-items: center;
+}
+
+.header__container-search{
     width: 240px;
     height: 40px;
+    border-radius: 8px;
     background-color: #F9F8F5;
     border: 1px solid #D9D5CA;
-    border-radius: 8px;
-    background-image: url(../img/Magnifiying\ Glass.png); 
-    background-position: 20px 10px; 
+    margin-left: 255px;
+
+    background-image: url('../img/Magnifiying\ Glass.png');
     background-repeat: no-repeat;
-    margin-right: 60px;
+    background-size: 20px 20px;
+    background-position: 20px 10px;
 }
 
-.header__search::placeholder{
+.header__container-search::placeholder{
     font-family: 'Inter regular';
     font-size: 16px;
     color: #625B5B;
     padding-left: 56px;
 }
 
-.header__login{
+.header__container-txt{
     font-family: 'SF UI Display medium';
     font-size: 16px;
     color: #625B5B;
     text-decoration: none;
-
-    margin-right: 32px;
+    margin-left: 60px;
 }
 
-.header__button{
+.header__container-button{
     width: 143px;
     height: 38px;
+    border-radius: 20px;
     background-color: #F9F8F5;
     border: 1px solid #625B5B;
-    border-radius: 20px;
+    margin-left: 32px;
 
     font-family: 'SF UI Display medium';
     font-size: 16px;
+    color: #625B5B;
+}
+
+
+
+/* main */
+.block1__Header-Information h1{
+    font-family: 'SF UI Display bold';
+    font-size: 80px;
     color: #1E1515;
+    margin-bottom: 16px;
 }
 
-.header__container__logo{
-    width: 137px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-right: 60px;
+.block1__Header-Information p{
+    font-family: 'Inter regular';
+    font-size: 20px;
+    color: #625B5B;
+    margin-bottom: 40px;
 }
 
-.header__container{
-    width: 1400px;
-    display: flex;
-    align-items: center;
+.block1__Header-Information button{
+    width: 200px;
+    height: 60px;
+    background-color: #1E1515;
+    border-radius: 32px;
 
-    margin: 0 auto;
+    font-family: 'SF UI Display bold';
+    font-size: 20px;
+    color: #F9F8F5;
+    padding-right: 24px;
+
+    background-image: url('../img/Icon.png');
+    background-repeat: no-repeat;
+    background-size: 28px 28px;
+    background-position: 155px 16px;
+}
+
+.block1__Header-Information{
+    text-align: center;
+    margin-top: 100px;
+}
+
+.block1__img1{
+    position: absolute;
+    top: 235px;
+    left: 0;
+}
+
+.block1__img2{
+    position: absolute;
+    top: 235px;
+    right: 0;
+}
+
+.block1__Top-Freelancers{
+    width: 376px;
+    height: 501px;
+    background: #FFFFFF;
+    border: 1px solid #FAE5D1;
+    border-radius: 200px 200px 12px 12px;
+}
+
+.block1__Top-Freelancers1{
+    width: 312px;
+    height: 271px;
+    background: #FAE5D1;
+    border-radius: 200px 200px 12px 12px;
     margin-top: 32px;
+    margin-left: 32px;
+}
+
+.block1__Top-Freelancers1-img{
+    margin-left: 40px;
+}
+
+.block1__Top-Freelancers-price{
+    font-family: 'SF UI Display medium';
+    font-size: 16px;
+    color: #1E1515;
+    margin-left: 36px;
+    margin-top: 22px;
+}
+
+.block1__Top-Freelancers-name{
+    font-family: 'SF UI Display medium';
+    font-size: 24px;
+    color: #000000;
+    margin-left: 36px;
+    margin-top: 8px;
+}
+
+.block1__Top-Freelancers-profession{
+    font-family: 'Inter regular';
+    font-size: 16px;
+    color: #625B5B;
+    margin-left: 36px;
+    margin-top: 8px;
+}
+
+.block1__Top-Freelancers-rang{
+    font-family: 'SF UI Display medium';
+    font-size: 24px;
+    color: #000000;
+    margin-left: 308px;
+    margin-bottom: 115px;
 }
